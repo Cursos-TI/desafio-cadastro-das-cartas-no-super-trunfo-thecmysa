@@ -6,8 +6,10 @@ int main() {
     float area[8][4];
     float pib[8][4];
     int pontos_turisticos[8][4];
-    float calcular_poder(int populacao, float area, float pib, int pontos_turisticos);
-   
+    float calcular_poder;
+
+    calcular_poder = (populacao + area + pib + pontos_turisticos);
+
     float poder_A01, poder_A02, poder_A03, poder_A04;
     float poder_B01, poder_B02, poder_B03, poder_B04;
     float poder_C01, poder_C02, poder_C03, poder_C04;
@@ -610,51 +612,47 @@ int main() {
     printf("Pontos Turísticos: %d\n", pontos_turisticos[7][3]);
     printf("-------------------------\n");
 
-    poder_A01 = calcular_poder(populacao[0][0], area[0][0], pib[0][0], pontos_turisticos[0][0]);
-    poder_A02 = calcular_poder(populacao[0][1], area[0][1], pib[0][1], pontos_turisticos[0][1]);
-    poder_A03 = calcular_poder(populacao[0][2], area[0][2], pib[0][2], pontos_turisticos[0][2]);
-    poder_A04 = calcular_poder(populacao[0][3], area[0][3], pib[0][3], pontos_turisticos[0][3]);
+    poder_A01 = calcular_poder + (populacao[0][0], area[0][0], pib[0][0], pontos_turisticos[0][0]);
+    poder_A02 = calcular_poder + (populacao[0][1], area[0][1], pib[0][1], pontos_turisticos[0][1]);
+    poder_A03 = calcular_poder + (populacao[0][2], area[0][2], pib[0][2], pontos_turisticos[0][2]);
+    poder_A04 = calcular_poder + (populacao[0][3], area[0][3], pib[0][3], pontos_turisticos[0][3]);
 
-    poder_B01 = calcular_poder(populacao[1][0], area[1][0], pib[1][0], pontos_turisticos[1][0]);
-    poder_B02 = calcular_poder(populacao[1][1], area[1][1], pib[1][1], pontos_turisticos[1][1]);
-    poder_B03 = calcular_poder(populacao[1][2], area[1][2], pib[1][2], pontos_turisticos[1][2]);
-    poder_B04 = calcular_poder(populacao[1][3], area[1][3], pib[1][3], pontos_turisticos[1][3]);
+    poder_B01 = calcular_poder + (populacao[1][0], area[1][0], pib[1][0], pontos_turisticos[1][0]);
+    poder_B02 = calcular_poder + (populacao[1][1], area[1][1], pib[1][1], pontos_turisticos[1][1]);
+    poder_B03 = calcular_poder + (populacao[1][2], area[1][2], pib[1][2], pontos_turisticos[1][2]);
+    poder_B04 = calcular_poder + (populacao[1][3], area[1][3], pib[1][3], pontos_turisticos[1][3]);
 
-    poder_C01 = calcular_poder(populacao[2][0], area[2][0], pib[2][0], pontos_turisticos[2][0]);
-    poder_C02 = calcular_poder(populacao[2][1], area[2][1], pib[2][1], pontos_turisticos[2][1]);
-    poder_C03 = calcular_poder(populacao[2][2], area[2][2], pib[2][2], pontos_turisticos[2][2]);
-    poder_C04 = calcular_poder(populacao[2][3], area[2][3], pib[2][3], pontos_turisticos[2][3]);
+    poder_C01 = calcular_poder + (populacao[2][0], area[2][0], pib[2][0], pontos_turisticos[2][0]);
+    poder_C02 = calcular_poder + (populacao[2][1], area[2][1], pib[2][1], pontos_turisticos[2][1]);
+    poder_C03 = calcular_poder + (populacao[2][2], area[2][2], pib[2][2], pontos_turisticos[2][2]);
+    poder_C04 = calcular_poder + (populacao[2][3], area[2][3], pib[2][3], pontos_turisticos[2][3]);
 
-    poder_D01 = calcular_poder(populacao[3][0], area[3][0], pib[3][0], pontos_turisticos[3][0]);
-    poder_D02 = calcular_poder(populacao[3][1], area[3][1], pib[3][1], pontos_turisticos[3][1]);
-    poder_D03 = calcular_poder(populacao[3][2], area[3][2], pib[3][2], pontos_turisticos[3][2]);
-    poder_D04 = calcular_poder(populacao[3][3], area[3][3], pib[3][3], pontos_turisticos[3][3]);
+    poder_D01 = calcular_poder + (populacao[3][0], area[3][0], pib[3][0], pontos_turisticos[3][0]);
+    poder_D02 = calcular_poder + (populacao[3][1], area[3][1], pib[3][1], pontos_turisticos[3][1]);
+    poder_D03 = calcular_poder + (populacao[3][2], area[3][2], pib[3][2], pontos_turisticos[3][2]);
+    poder_D04 = calcular_poder + (populacao[3][3], area[3][3], pib[3][3], pontos_turisticos[3][3]);
 
-    poder_E01 = calcular_poder(populacao[4][0], area[4][0], pib[4][0], pontos_turisticos[4][0]);
-    poder_E02 = calcular_poder(populacao[4][1], area[4][1], pib[4][1], pontos_turisticos[4][1]);
-    poder_E03 = calcular_poder(populacao[4][2], area[4][2], pib[4][2], pontos_turisticos[4][2]);
-    poder_E04 = calcular_poder(populacao[4][3], area[4][3], pib[4][3], pontos_turisticos[4][3]);
+    poder_E01 = calcular_poder + (populacao[4][0], area[4][0], pib[4][0], pontos_turisticos[4][0]);
+    poder_E02 = calcular_poder + (populacao[4][1], area[4][1], pib[4][1], pontos_turisticos[4][1]);
+    poder_E03 = calcular_poder + (populacao[4][2], area[4][2], pib[4][2], pontos_turisticos[4][2]);
+    poder_E04 = calcular_poder + (populacao[4][3], area[4][3], pib[4][3], pontos_turisticos[4][3]);
 
-    poder_F01 = calcular_poder(populacao[5][0], area[5][0], pib[5][0], pontos_turisticos[5][0]);
-    poder_F02 = calcular_poder(populacao[5][1], area[5][1], pib[5][1], pontos_turisticos[5][1]);
-    poder_F03 = calcular_poder(populacao[5][2], area[5][2], pib[5][2], pontos_turisticos[5][2]);
-    poder_F04 = calcular_poder(populacao[5][3], area[5][3], pib[5][3], pontos_turisticos[5][3]);
+    poder_F01 = calcular_poder + (populacao[5][0], area[5][0], pib[5][0], pontos_turisticos[5][0]);
+    poder_F02 = calcular_poder + (populacao[5][1], area[5][1], pib[5][1], pontos_turisticos[5][1]);
+    poder_F03 = calcular_poder + (populacao[5][2], area[5][2], pib[5][2], pontos_turisticos[5][2]);
+    poder_F04 = calcular_poder + (populacao[5][3], area[5][3], pib[5][3], pontos_turisticos[5][3]);
 
-    poder_G01 = calcular_poder(populacao[6][0], area[6][0], pib[6][0], pontos_turisticos[6][0]);
-    poder_G02 = calcular_poder(populacao[6][1], area[6][1], pib[6][1], pontos_turisticos[6][1]);
-    poder_G03 = calcular_poder(populacao[6][2], area[6][2], pib[6][2], pontos_turisticos[6][2]);
-    poder_G04 = calcular_poder(populacao[6][3], area[6][3], pib[6][3], pontos_turisticos[6][3]);
+    poder_G01 = calcular_poder + (populacao[6][0], area[6][0], pib[6][0], pontos_turisticos[6][0]);
+    poder_G02 = calcular_poder + (populacao[6][1], area[6][1], pib[6][1], pontos_turisticos[6][1]);
+    poder_G03 = calcular_poder + (populacao[6][2], area[6][2], pib[6][2], pontos_turisticos[6][2]);
+    poder_G04 = calcular_poder + (populacao[6][3], area[6][3], pib[6][3], pontos_turisticos[6][3]);
 
-    poder_H01 = calcular_poder(populacao[7][0], area[7][0], pib[7][0], pontos_turisticos[7][0]);
-    poder_H02 = calcular_poder(populacao[7][1], area[7][1], pib[7][1], pontos_turisticos[7][1]);
-    poder_H03 = calcular_poder(populacao[7][2], area[7][2], pib[7][2], pontos_turisticos[7][2]);
-    poder_H04 = calcular_poder(populacao[7][3], area[7][3], pib[7][3], pontos_turisticos[7][3]);
-
-
+    poder_H01 = calcular_poder + (populacao[7][0], area[7][0], pib[7][0], pontos_turisticos[7][0]);
+    poder_H02 = calcular_poder + (populacao[7][1], area[7][1], pib[7][1], pontos_turisticos[7][1]);
+    poder_H03 = calcular_poder + (populacao[7][2], area[7][2], pib[7][2], pontos_turisticos[7][2]);
+    poder_H04 = calcular_poder + (populacao[7][3], area[7][3], pib[7][3], pontos_turisticos[7][3]);
 
 
-
-    // Este padrão deve ser seguido para todas as combinações de estados e cidades.
 
     return 0;
-}
+};
