@@ -22,10 +22,10 @@ resultado = ++numero1; //numero1 = numero1 +1. ou   //numero1 += 1.
 printf("Após-Pré incremento - Numero 1: %d - Resultado: %d\n", numero1, resultado);
 
 resultado = numero1--; //numero1 = numero1 -1. ou  //numero1 -= 1.
-printf ("Após dencremento: %d\n", numero1, resultado); 
+printf ("Após dencremento - Numero 1: %d - Resultado: %d\n", numero1, resultado);
 
 resultado = --numero1; //numero1 = numero1 -1. ou  //numero1 -= 1.
-printf ("Pré dencremento: %d\n", numero1, resultado); 
+printf ("Pré dencremento - Numero 1: %d - Resultado: %d\n", numero1, resultado);
 
 return 0;
 };

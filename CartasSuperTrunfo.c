@@ -1,64 +1,227 @@
 #include <stdio.h>
-#include <string.h>
-// Estrutura para armazenar os dados de uma carta
-typedef struct {
-    char estado;
-    char codigo[4];
-    char nome[50];
-    int populacao;
-    float area;
-    float pib;
-    int pontos_turisticos;
-} Carta;
-
-// Função para cadastrar uma carta
-void cadastrarCarta(Carta *carta) {
-    printf("\nDigite o estado (A-H): ");
-    scanf(" %c", &carta->estado);
-
-    printf("Digite o código da carta (ex: A01): ");
-    scanf(" %s", carta->codigo);
-
-    printf("Digite o nome da cidade: ");
-    scanf(" %s", carta->nome);
-
-    printf("Digite a população: ");
-    scanf(" %d", &carta->populacao);
-
-    printf("Digite a área (em km²): ");
-    scanf(" %f", &carta->area);
-
-    printf("Digite o PIB: ");
-    scanf(" %f", &carta->pib);
-
-    printf("Digite o número de pontos turísticos: ");
-    scanf(" %d", &carta->pontos_turisticos);
-}
-
-// Função para exibir os dados de uma carta
-void exibirCarta(Carta carta) {
-    printf("\n===== Dados da Carta =====\n");
-    printf("Estado: %c\n", carta.estado);
-    printf("Código: %s\n", carta.codigo);
-    printf("Nome da cidade: %s\n", carta.nome);
-    printf("População: %d\n", carta.populacao);
-    printf("Área: %.2f km²\n", carta.area);
-    printf("PIB: %.2f\n", carta.pib);
-    printf("Pontos turísticos: %d\n", carta.pontos_turisticos);
-}
 
 int main() {
-    int numCartas = 32; // Total de cartas: 8 estados * 4 cidades cada
-    Carta cartas[numCartas];
+    // Matrizes para armazenar as propriedades de cada carta
+    int populacao[8][4];
+    float area[8][4];
+    float pib[8][4];
+    int pontos_turisticos[8][4];
 
-    printf("==== Cadastro de Cartas do Super Trunfo ====\n");
-    for (int i = 0; i < numCartas; i++) {
-        printf("\nCadastro da carta %d de %d\n", i + 1, numCartas);
-        cadastrarCarta(&cartas[i]);
-        exibirCarta(cartas[i]);
-    }
+    printf("Bem-vindo ao Super Trunfo - Cadastro de Cartas!\n");
 
-    printf("\nCadastro concluído!\n");
-    
+    // Cadastro manual para cada estado e cidade
+    printf("\nCadastro da carta Estado A Cidade 1:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[0][0]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[0][0]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[0][0]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[0][0]);
+
+
+    printf("\nCadastro da carta Estado A Cidade 2:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[0][1]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[0][1]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[0][1]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[0][1]);
+
+
+    printf("\nCadastro da carta Estado A Cidade 3:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[0][2]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[0][2]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[0][2]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[0][2]);
+
+    printf("\nCadastro da carta Estado A Cidade 4:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[0][3]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[0][3]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[0][3]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[0][3]);
+
+    // Repetir manualmente para cada carta...
+    // Este padrão continua para todas as combinações de estado e cidade.
+    // Para simplificação, apenas 4 cartas de exemplo são exibidas aqui.
+
+    printf("\nCadastro da carta Estado B Cidade 1:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[1][0]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[1][0]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[1][0]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[1][0]);
+
+
+    printf("\nCadastro da carta Estado B Cidade 2:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[1][1]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[1][1]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[1][1]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[1][1]);
+
+    printf("\nCadastro da carta Estado B Cidade 3:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[1][2]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[1][2]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[1][2]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[1][2]);
+
+    printf("\nCadastro da carta Estado B Cidade 4:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[1][3]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[1][3]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[1][3]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[1][3]);
+
+
+      printf("\nCadastro da carta Estado C (Cidade 1:\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[2][0]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[2][0]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[2][0]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[2][0]);
+
+
+    printf("\nCadastro da carta Estado C (Cidade 2):\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[2][1]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[2][1]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[2][1]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[2][1]);
+
+    printf("\nCadastro da carta Estado C (Cidade 3):\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[2][2]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[2][2]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[2][2]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[1][2]);
+
+    printf("\nCadastro da carta Estado C (Cidade 4):\n");
+
+    printf("População: ");
+    scanf("%d", &populacao[2][3]);
+
+    printf("Área (em km²): ");
+    scanf("%f", &area[2][3]);
+
+    printf("PIB (em milhões): ");
+    scanf("%f", &pib[2][3]);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos[1][3]);
+
+
+
+
+    // Exibição das cartas cadastradas
+    printf("\nCartas cadastradas:\n");
+
+    printf("Código da Carta: A01\n");
+    printf("População: %d\n", populacao[0][0]);
+    printf("Área: %.2f km²\n", area[0][0]);
+    printf("PIB: %.2f milhões\n", pib[0][0]);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos[0][0]);
+    printf("-------------------------\n");
+
+    printf("Código da Carta: A02\n");
+    printf("População: %d\n", populacao[0][1]);
+    printf("Área: %.2f km²\n", area[0][1]);
+    printf("PIB: %.2f milhões\n", pib[0][1]);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos[0][1]);
+    printf("-------------------------\n");
+
+    printf("Código da Carta: B01\n");
+    printf("População: %d\n", populacao[1][0]);
+    printf("Área: %.2f km²\n", area[1][0]);
+    printf("PIB: %.2f milhões\n", pib[1][0]);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos[1][0]);
+    printf("-------------------------\n");
+
+    printf("Código da Carta: B02\n");
+    printf("População: %d\n", populacao[1][1]);
+    printf("Área: %.2f km²\n", area[1][1]);
+    printf("PIB: %.2f milhões\n", pib[1][1]);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos[1][1]);
+    printf("-------------------------\n");
+
+    // Este padrão deve ser seguido para todas as combinações de estados e cidades.
+
     return 0;
-};
+}
